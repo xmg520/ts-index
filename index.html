@@ -2,7 +2,7 @@
 <html lang="zh-CN" data-theme="dark">
 <head>
     <meta charset="UTF-8">
-    <title>TeamSpeak 服务器</title>
+    <title>心痛1998</title>
     <link rel="preload" href="/ts.min.js" as="script">
     <link rel="preload" href="/ts.min.css" as="style" type="text/css">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -12,10 +12,11 @@
     <meta http-equiv="cache-control" content="no-cache"/>
     <meta http-equiv="pragma" content="no-cache"/>
     <meta http-equiv="expires" content="-1"/>
-    <meta name="description" content="Vigorous Pro TeamSpeak 语音服务器, Edison的语音服务器">
+    <link rel="shortcut icon" type="logo" href="./favicon.ico">
+    <meta name="description" content="合规合法听话不延迟">
     <!--<meta http-equiv="refresh" content="3; url=ts3server://ts3.gs"> -->
     <link href="/ts.min.css" rel="stylesheet">
-    <script defer data-domain="teamspeak.app" src="https://collection.hit.moe/jquery.js"></script>
+    <script defer data-domain="ncma.cn" src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
 
 </head>
 <body>
@@ -27,8 +28,9 @@
             </h2>
             <div id="server-intro" class="text-base-content" style="margin-bottom: 15px">
                 <p>
-                    服务器已配置负载均衡，会根据您的 IP 及负载情况自行分流。正常情况下，使用默认接入点，并忽略下方的接入点列表即可。<br/>
-                    如您所在地区为中国大陆, 且遇到解析失败的情况, 请将本地 DNS 服务器地址设置为 "119.29.29.29", "114.114.114.114"
+                    服务器已配置负载均衡，会根据您的 IP 及负载情况自行分流。<br/>
+                    为啥用TeamSpeak？<br/>
+                    无延迟/安全好/占存少 <b>绝杀。</b>
                 </p>
             </div>
             <div id="server-data" class="text-base-content">
@@ -47,19 +49,20 @@
                 <div class="card col-span-4 row-span-2 shadow-lg bg-base-100 justify-center">
                     <div class="card-body">
                         <h2 class="my-4 text-3xl font-bold card-title">
-                            TeamSpeak 语音服务器
+                            TeamSpeak 开黑语音
                         </h2>
-                        <p>您应该在 TeamSpeak 客户端中输入这个地址，而非在网页浏览器中。<br/>
+                        <p>您应该在 TeamSpeak 客户端中输入csts.cf，在网页浏览器中。请按照下面步骤开始开黑吧<br/>
+                        </p>
+                        <p style="color: red;">下面客户端为国内修改版,仅方便提供快速下载使用<br/>勿相信任何内容<br/>
                         </p>
                         <div class="justify-end space-x-3 card-actions">
-                            <a class="btn btn-info" href="#server-list">连接至服务器</a>
-                            <button class="btn" onclick="window.open('https://ts.wevg.org', '_blank')">了解更多</button>
-
+                            <a class="btn btn-info" href="#server-list">①连接至服务器</a>
+                            <button class="btn" onclick="window.open('./ts.png', '_blank')">②麦克风设置</button>
                         </div>
                     </div>
                 </div>
                 <div class="flex items-center p-4 shadow-xl rounded-box bg-accent text-accent-content lg:col-span-1 md:col-span-2 sm:col-span-2 xs:col-span-4"
-                     onclick="window.open('https://ts.wevg.org/download/', '_blank')" style="cursor: pointer">
+                     onclick="downloadFile('https://teamspeak-mirror.wevg.org/releases/client/3.6.1/TeamSpeak3-Client-win64-3.6.1.exe')" style="cursor: pointer">
                     <div class="flex-1 px-2"><h2 class="text-xl font-extrabold">客户端下载</h2>
                     </div>
                     <div class="flex-0">
@@ -75,8 +78,8 @@
                     </div>
                 </div>
                 <div class="flex items-center p-4 shadow-xl rounded-box bg-error text-accent-content lg:col-span-1 md:col-span-2 sm:col-span-2 xs:col-span-4"
-                     onclick="window.open('https://ts.wevg.org/translation-zh-CN/', '_blank')" style="cursor: pointer">
-                    <div class="flex-1 px-2"><h2 class="text-xl font-extrabold">中文语言包</h2>
+                     onclick="window.open('https://dl.tmspk.wiki/https:/github.com/VigorousPro/TS3-Translation_zh-CN/releases/download/snapshot/Chinese_Translation_zh-CN.ts3_translation', '_blank')" style="cursor: pointer">
+                    <div class="flex-1 px-2"><h2 class="text-xl font-extrabold">中文插件</h2>
                     </div>
                     <div class="flex-0">
                         <div tabindex="0">
@@ -92,8 +95,8 @@
                 </div>
                 <div class="flex items-center p-4 shadow-xl rounded-box text-accent-content lg:col-span-1 md:col-span-2 sm:col-span-2 xs:col-span-4"
                      style="background: #f59e0b; cursor: pointer"
-                     onclick="window.open('https://pay.wevg.org/', '_blank')">
-                    <div class="flex-1 px-2"><h2 class="text-xl font-extrabold">赞助</h2>
+                     onclick="window.open('https://teamspeak.app/docs/basic/download/', '_blank')">
+                    <div class="flex-1 px-2"><h2 class="text-xl font-extrabold">关闭打赏</h2>
                     </div>
                     <div class="flex-0">
                         <div tabindex="0">
@@ -108,7 +111,7 @@
                     </div>
                 </div>
                 <div class="flex items-center p-4 shadow-xl rounded-box bg-primary text-accent-content lg:col-span-1 md:col-span-2 sm:col-span-2 xs:col-span-4"
-                     style="cursor: pointer" onclick="window.open('https://forms.office.com/Pages/ResponsePage.aspx?id=s4QsBDUuo0KCktQzq2sP1SBoHVxH37BLnxJuOTCvjbZUMFgyV0dJTjlDTktLU1NRN082SUM3QUFXRC4u', '_blank')">
+                     style="cursor: pointer" onclick="window.open('http://wpa.qq.com/msgrd?v=3&uin=903563099&site=qq&menu=yes', '_blank')">
                     <div class="flex-1 px-2">
                         <h2 class="text-xl font-extrabold">联系我们</h2>
                     </div>
@@ -126,7 +129,7 @@
                 </div>
                 <div class="flex items-center p-4 shadow-xl rounded-box bg-info text-accent-content lg:col-span-2 md:col-span-2 sm:col-span-2 xs:col-span-4">
                     <div class="flex-1 px-2">
-                        <div class="text-xl font-extrabold" id="online">加载中</div>
+                        <div class="text-xl font-extrabold" id="online">12</div>
                         <div class="text-opacity-80 text-sm">当前在线人数</div>
                     </div>
                     <div class="flex-0">
@@ -146,7 +149,7 @@
                 <div class="flex items-center p-4 shadow-xl rounded-box bg-secondary-focus text-accent-content lg:col-span-2 md:col-span-2 sm:col-span-2 xs:col-span-4">
                     <div class="flex-1 px-2">
                         <p class="text-sm text-opacity-80">平均延迟/丢包</p>
-                        <h2 class="text-xl font-extrabold" style="display: contents" id="avgLatency">加载中</h2>&nbsp;
+                        <h2 class="text-xl font-extrabold" style="display: contents" id="avgLatency">8ms</h2>&nbsp;
                         <div class="stat-desc" style="display: inline" id="packageLoss"></div>
                     </div>
                     <div class="flex-0">
